@@ -1,0 +1,264 @@
+.not_faded{
+  z-index: 2;
+}
+.faded {
+  position: absolute;
+  z-index: -3;
+  visibility: hidden;
+  opacity: 0;
+  background-color: white;
+}
+body {
+  position: relative;
+  top:0;
+  right:0;
+  min-width: 320px;
+  min-height: 650px;
+  font-family: 'Permanent Marker';
+  background-image: url("../app/camagru_background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.pagination {
+  margin: auto;
+  margin-top: 2%;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#error {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+}
+#error_msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background-color: #e1e0ee;
+}
+.error_txt {
+  color: red;
+  font-size: 1.6vh;
+  text-align: center;
+}
+.forms_input {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: max-content;
+  background-color: white;
+  font: 1.5vw 'Permanent Marker';
+  margin:2%;
+  cursor: pointer;
+}
+.forms_input_text {
+  display:flex;
+  justify-content:space-around;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin:auto;
+  width: 100%;
+  font-size: 1.3vw;
+}
+.forms_account {
+}
+.date_text {
+  font-size: 0.7vw;
+}
+#center_form {
+  margin-top: 0%;
+  display: flex;
+  flex-direction: column;
+  width:  35%;
+  height: 60%;
+}
+.title_nav {
+  font-size: 2.5vw;
+  text-decoration:none;
+  color:black;
+}
+#icon {
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15vw;
+  cursor: pointer;
+}
+#forms {
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 1.5vw;
+}
+#title_div {
+  width:100%;
+  font-size: 2.5vw;
+}
+#link_div {
+  text-align: center;
+  width:100%;
+  font-size: 1.3vw;
+  margin-bottom: 1%;
+}
+#icon_gallery {
+  width:6vw;
+  height:auto;
+  padding-top: 2vh;
+}
+#icon_gallery_bigger {
+  width:10vw;
+  height:auto;
+}
+.mirror {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+#navbar {
+  z-index:1;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap ;
+  justify-content:space-around;
+  width:100%;
+  height:auto;
+}
+#general {
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  z-index: 0;
+  height: 120vh;
+}
+#down_navbar {
+  display:flex;
+  flex-direction: column;
+  height:68%;
+  z-index: 2;
+}
+}
+@media only screen and (max-width:450px) {
+  #forms {
+    font-size: 3.5vw;
+  }
+  #footer {
+    position: relative;
+  }
+}
+@media only screen and (max-width:800px) {
+  #icon {
+    width: 20vw;
+  }
+  .title_nav {
+    font-size: 4.0vw;
+  }
+  #link_div {
+    font-size: 3.0vw;
+  }
+  #down_navbar {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:88%;
+  }
+  #center_form {
+    width:75%;
+    flex-direction: column;
+    height: 50%;
+  }
+  #forms {
+    font-size: 6.5vw;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .forms_input {
+    font-size: 3.0vw;
+  }
+  .forms_input_text {
+    font-size: 2.5vw;
+  }
+  .date_text {
+    font-size: 2vw;
+  }
+}
+#footer {
+  z-index:1;
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+#auteur {
+  text-align: right;
+  width: 100%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  z-index: 1;
+}
+#background {
+  z-index:-1;
+  background-image: url("../app/camagru_background.png");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height:143vh;
+  margin-top: -25vh;
+  min-width: 300px;
+  min-height: 300px;
+  position: absolute;
+}
+.faded {
+  position: absolute;
+  z-index: -3;
+  visibility: hidden;
+  opacity: 0;
+  background-color: white;
+  .forms_input {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: max-content;
+    background-color: white;
+    font: 1.5vw 'Permanent Marker';
+    margin:2%;
+  }
+}

@@ -1,0 +1,225 @@
+#post {
+	width:40%;
+	height: auto;
+	display:flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	word-break: break-all;
+	background-color: #FFFFFF;
+
+}
+#posts {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 75%;
+	height: 100%;
+	margin: auto;
+	background-color: #FFFFFF;
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+#gallery {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: 100%;
+}
+#gallery_posts {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+
+}
+#image_post {
+	display:flex;
+	flex-direction: row;
+	border: 1px solid #FFFFFF;
+	min-width: 100px;
+}
+#sub_img {
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	width: 100%;
+}
+#post_user {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid #FFFFFF;
+}
+#post_title {
+	border: 1px solid LIGHTGREY;
+}
+.post_text {
+	font-size: 1.2vw;
+	margin: auto;
+	width: 100%;
+}
+.comment_text {
+	font-size: 1.0vw;
+	margin: auto;
+	width: 100%;
+}
+#img_desc {
+	display: flex;
+	font-size: 1vw;
+	border: 1px solid #FFFFFF;
+	flex-direction: column;
+}
+.desc {
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 0;
+	font-size: 1.5vw;
+}
+.img_posted {
+	display: flex;
+	width:100%;
+	height: auto;
+}
+#post_like {
+	display:flex;
+	flex-direction: row;
+	border: 1px solid #FFFFFF;
+}
+.input_like {
+	width: 85%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+#inter_post {
+	display:flex;
+	flex-direction: column;
+}
+#edit_post {
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+#comments {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#show_comment{
+	width: 95%;
+	height:15vh;
+	overflow: auto;
+}
+#create_comment {
+	display:flex;
+	flex-direction: column;
+	width: 95%;
+}
+#com_post {
+display: flex;
+flex-direction: column;
+border: 1px solid #eeeeee;
+}
+#com_title {
+width: 100%;
+margin: auto;
+}
+#com_bine {
+display: flex;
+flex-direction: row;
+font-size: 0.8vw;
+}
+#com_date {
+	width: 100%;
+	margin: auto;
+  text-align: right;
+}
+#com_comment {
+    font-size: 1.1vw;
+}
+.input_comment {
+	width: 85%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+#account_forms {
+display: flex;
+flex-direction: row;
+}
+.account_stuff {
+	z-index: 5;
+	margin-left: 0%;
+}
+#mask {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	z-index: 0;
+}
+#account {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: fit-content;
+	background-color: #FF7936;
+}
+.account_forms {
+display:flex;
+flex-direction: column;
+margin: auto;
+font-size: 1.3vw;
+text-align: center;
+z-index: 1;
+}
+#change_login {
+	z-index: 3;
+	margin: auto;
+}
+#change_email {
+	z-index: 3;
+	margin: auto;
+}
+#change_pwd {
+	margin: auto;
+	z-index: 3;
+}
+@media only screen and (max-width:800px) {
+	.account_forms {
+		font-size: 3.0vw;
+	}
+	#account {
+	}
+	#post {
+		width: 100%;
+		height: 100%;
+		margin: auto;
+	}
+	.post_text {
+		font-size: 3.5vw;
+		margin: auto;
+		width: 100%;
+		text-align: center;
+	}
+	.desc {
+		font-size: 3.5vw;
+	}
+	.comment_text {
+		font-size:3.0vw;
+	}
+}
